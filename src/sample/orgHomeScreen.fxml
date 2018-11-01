@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.orgHomeScreenController">
+  <children>
+    <Pane prefHeight="400.0" prefWidth="110.0" style="-fx-background-color: #885EAD;">
+      <children>
+        <JFXButton layoutX="20.0" layoutY="55.0" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Home"/>
+        <JFXButton fx:id="orgHomeScreenCreate" layoutX="20.0" layoutY="126.0"
+          onAction="#changeScreenOrgHomeScreenCreateButtonPushed" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Create"/>
+        <JFXButton fx:id="orgHomeScreenMyEvents" layoutX="20.0" layoutY="197.0"
+          onAction="#changeScreenOrgHomeScreenMyEventsButtonPushed" prefHeight="25.0"
+          prefWidth="75.0" style="-fx-background-color: #ffffff;" text="My Events"/>
+        <JFXButton fx:id="orgHomeScreenEditProfile" layoutX="20.0" layoutY="268.0"
+          onAction="#changeScreenOrgHomeScreenEditProfileButtonPushed" prefHeight="25.0"
+          prefWidth="75.0" style="-fx-background-color: #ffffff;" text="Edit Profile"/>
+        <JFXButton fx:id="orgHomeScreenLogout" layoutX="20.0" layoutY="339.0"
+          onAction="#changeScreenOrgHomeScreenLogoutButtonPushed" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Logout"/>
+      </children>
+    </Pane>
+    <Label layoutX="137.0" layoutY="21.0" text="Recently Created Events" textFill="#885ead">
+      <font>
+        <Font name="System Bold" size="16.0"/>
+      </font>
+    </Label>
+    <Separator layoutX="137.0" layoutY="57.0" prefHeight="3.0" prefWidth="585.0"/>
+    <Text fill="#885ead" layoutX="189.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Event Example 1">
+      <font>
+        <Font size="18.0"/>
+      </font>
+    </Text>
+    <Separator layoutX="189.0" layoutY="121.0" prefHeight="3.0" prefWidth="500.0"/>
+    <Text layoutX="189.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="FGCU Cohen Center">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="375.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Tuesday, October 22nd">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="592.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="1:30 PM - 3:00 PM"/>
+    <Text fill="#885ead" layoutX="190.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Event Example 2">
+      <font>
+        <Font size="18.0"/>
+      </font>
+    </Text>
+    <Separator layoutX="190.0" layoutY="224.0" prefHeight="3.0" prefWidth="500.0"/>
+    <Text layoutX="190.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="FGCU Holmes Hall">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="376.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Monday, October 29th">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="593.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="6:00 PM - 9:00 PM"/>
+    <Text fill="#885ead" layoutX="190.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Event Example 3">
+      <font>
+        <Font size="18.0"/>
+      </font>
+    </Text>
+    <Separator layoutX="190.0" layoutY="334.0" prefHeight="3.0" prefWidth="500.0"/>
+    <Text layoutX="190.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Parks and Rec (Lee)">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="376.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="Thursday, November 1st">
+      <font>
+        <Font size="14.0"/>
+      </font>
+    </Text>
+    <Text layoutX="593.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0"
+      text="8:00 AM - 1:00 PM"/>
+  </children>
+</AnchorPane>

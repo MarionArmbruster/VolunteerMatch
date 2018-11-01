@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.volEditProfileController">
+  <children>
+    <Pane prefHeight="400.0" prefWidth="110.0" style="-fx-background-color: #885EAD;">
+      <children>
+        <JFXButton fx:id="volEditProfileHome" layoutX="20.0" layoutY="55.0"
+          onAction="#changeScreenVolEditProfileHomeButtonPushed" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Home"/>
+        <JFXButton fx:id="volEditProfileJoin" layoutX="20.0" layoutY="126.0"
+          onAction="#changeScreenVolEditProfileJoinButtonPushed" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Join"/>
+        <JFXButton fx:id="volEditProfileMyEvents" layoutX="20.0" layoutY="197.0"
+          onAction="#changeScreenVolEditProfileMyEventsButtonPushed" prefHeight="25.0"
+          prefWidth="75.0" style="-fx-background-color: #ffffff;" text="My Events"/>
+        <JFXButton layoutX="20.0" layoutY="268.0" prefHeight="25.0" prefWidth="75.0"
+          style="-fx-background-color: #ffffff;" text="Edit Profile"/>
+        <JFXButton fx:id="volEditProfileLogout" layoutX="20.0" layoutY="339.0"
+          onAction="#changeScreenVolEditProfileLogoutButtonPushed" prefHeight="25.0"
+          prefWidth="75.0" style="-fx-background-color: #ffffff;" text="Logout"/>
+      </children>
+    </Pane>
+    <JFXTextField focusColor="#885ead" layoutX="137.0" layoutY="84.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="First Name"/>
+    <JFXTextField focusColor="#885ead" layoutX="137.0" layoutY="145.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Email"/>
+    <JFXTextField focusColor="#885ead" layoutX="137.0" layoutY="267.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Phone Number"/>
+    <JFXTextField focusColor="#885ead" layoutX="444.0" layoutY="84.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Last Name"/>
+    <JFXTextField focusColor="#885ead" layoutX="444.0" layoutY="267.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Zip Code"/>
+    <Label layoutX="137.0" layoutY="21.0" text="Edit Account Details" textFill="#885ead">
+      <font>
+        <Font name="System Bold" size="16.0"/>
+      </font>
+    </Label>
+    <JFXComboBox focusColor="#885ead" layoutX="137.0" layoutY="206.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Country"/>
+    <JFXComboBox focusColor="#885ead" layoutX="444.0" layoutY="206.0" prefHeight="25.0"
+      prefWidth="120.0" promptText="State"/>
+    <JFXComboBox focusColor="#885ead" layoutX="598.0" layoutY="206.0" prefHeight="25.0"
+      prefWidth="120.0" promptText="City"/>
+    <Separator layoutX="137.0" layoutY="57.0" prefHeight="3.0" prefWidth="585.0"/>
+    <JFXPasswordField focusColor="#885ead" layoutX="444.0" layoutY="145.0" prefHeight="25.0"
+      prefWidth="274.0" promptText="Password"/>
+    <JFXButton layoutX="608.0" layoutY="338.0" prefHeight="25.0" prefWidth="110.0"
+      style="-fx-background-color: #885EAD;" text="Confirm Edit" textFill="WHITE"/>
+    <JFXButton fx:id="volEditProfileChangeAccount" layoutX="137.0" layoutY="338.0"
+      onAction="#changeScreenVolEditProfileChangeAccountsButtonPushed" prefHeight="25.0"
+      prefWidth="110.0" style="-fx-background-color: #885EAD;" text="Change Account"
+      textFill="WHITE"/>
+  </children>
+</AnchorPane>
